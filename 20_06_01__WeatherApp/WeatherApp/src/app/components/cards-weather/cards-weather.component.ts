@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ClimaFiltrado } from 'src/app/interfaces/clima.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cards-weather',
@@ -12,7 +13,7 @@ export class CardsWeatherComponent implements OnInit {
 
   public showboton:boolean=false;
 
-  constructor() {}
+  constructor(public router:Router) {}
 
   ngOnInit(): void {
     this.showboton=this.mostrarBoton;
@@ -32,6 +33,12 @@ export class CardsWeatherComponent implements OnInit {
       return [];
     } else {
       return ArrayWeather;
+    }
+  }
+
+  public irDetalles(){
+    if(!this.mostrarBoton){
+      this.router.navigate(['details', 'qaz'])
     }
   }
 }

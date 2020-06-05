@@ -1,4 +1,4 @@
-<div class="tarjeta">
+<div class="tarjeta" (click)="irDetalles()">
     <p class="titulo">{{ climaFiltradoRecibido.NombreCiudad }}</p>
 
     <img [src]="climaFiltradoRecibido.Imagen | construirUrlImagen">
