@@ -1,0 +1,80 @@
+#section4 {
+    height: 45vh;
+    margin: 5px;
+    margin-right: -3%;
+    position: relative;
+    background: url("./../../../assets/img/plant.jpeg");
+}
+
+.textosection {
+    position: absolute;
+    color: white;
+    left: 28%;
+    top: 10%;
+}
+
+.textosection1 {
+    position: absolute;
+    color: white;
+    left: 28%;
+    top: 48%;
+    font-weight: bold;
+}
+
+.textosection2 {
+    position: absolute;
+    color: white;
+    left: 28%;
+    top: 53%;
+}
+
+.textosection3 {
+    position: absolute;
+    color: white;
+    left: 28%;
+    top: 65%;
+    font-weight: bold;
+}
+
+.textosection4 {
+    position: absolute;
+    color: white;
+    left: 28%;
+    top: 70%;
+}
+
+.textosection5 {
+    position: absolute;
+    color: white;
+    left: 28%;
+    top: 80%;
+    font-weight: bold;
+}
+
+.textosection6 {
+    position: absolute;
+    color: white;
+    left: 28%;
+    top: 85%;
+}
+
+.contactanos {
+    position: absolute;
+    color: green;
+    left: 28%;
+    top: 35%;
+    font-weight: bold;
+}
+
+.forum {
+    position: absolute;
+    color: white;
+    font-size: 56px;
+    left: 27%;
+    top: 15%;
+    font-weight: bold;
+}
+
+.forum>span {
+    color: limegreen;
+}

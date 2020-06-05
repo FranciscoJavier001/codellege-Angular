@@ -1,0 +1,15 @@
+.cuadroNegro {
+    background: #242323;
+    height: 80vh;
+}
+
+.cuadroNegro>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadroNegro>div img {
+    height: 400px;
+    width: 400px;
+}

@@ -1,0 +1,54 @@
+h3 {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrival {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    height: 80vh;
+}
+
+.cardArrival {
+    width: 20vw;
+    height: 70vh;
+    background: #ccc;
+}
+
+.cardArrival:hover .detalles div:nth-child(1) {
+    visibility: hidden;
+}
+
+.cardArrival:hover .detalles div:nth-child(2) {
+    visibility: visible;
+}
+
+.cardArrival img {
+    width: 100%;
+    height: 80%;
+}
+
+.detalles {
+    height: 20%;
+    width: 100%;
+    padding: 3px 0px;
+    position: relative;
+}
+
+.detalles div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.detalles>div:nth-child(2) {
+    visibility: hidden;
+}

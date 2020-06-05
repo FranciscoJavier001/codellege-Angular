@@ -1,0 +1,101 @@
+<h2 class="mt-5">Pipes</h2>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Pipe</th>
+            <th>Formato</th>
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Currency</td>
+            <td>{{valor}} | currency</td>
+            <td>{{valor | currency}}</td>
+        </tr>
+        <tr>
+            <td>Currency con parametro</td>
+            <td>{{valor}} | currency:'EUR'</td>
+            <td>{{valor | currency:'EUR'}}</td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>{{fecha}} | date'short'</td>
+            <td>{{fecha | date:'short'}}</td>
+        </tr>
+        <tr>
+            <td>DateTime</td>
+            <td>{{fecha}} | time:'shortTime'</td>
+            <td>{{fecha | date:'shortTime'}}</td>
+        </tr>
+        <tr>
+            <td>Date Custom</td>
+            <td>{{fecha}} | date:'dd/MMMM/yyyy'</td>
+            <td>{{fecha | date:'dd/MMMM/yyyy'}}</td>
+        </tr>
+        <tr>
+            <td>Decimal</td>
+            <td>{{valorPi}} | number</td>
+            <td>{{valorPi | number}}</td>
+        </tr>
+        <tr>
+            <td>Decimal con parametros</td>
+            <td>{{valorPi}} | number:'1.4-4'</td>
+            <td>{{valorPi | number: '1.4-4'}}</td>
+        </tr>
+        <tr>
+            <td>LowerCase</td>
+            <td>{{texto}} | lowercase</td>
+            <td>{{texto | lowercase}}</td>
+        </tr>
+        <tr>
+            <td>UpperCase</td>
+            <td>{{texto}} | uppercase</td>
+            <td>{{texto | uppercase}}</td>
+        </tr>
+        <tr>
+            <td>Percent</td>
+            <td>{{porcentaje}} | percent:'2.1-2'</td>
+            <td>{{porcentaje | percent:'2.1-2'}}</td>
+        </tr>
+        <tr>
+            <td>slice</td>
+            <td>{{arregloNumerico}} | slice:'1:4'</td>
+            <td>{{arregloNumerico | slice:1:4}}</td>
+        </tr>
+        <tr>
+            <td>slice con un solo parametro</td>
+            <td>{{arregloNumerico}} | slice:2</td>
+            <td>{{arregloNumerico | slice:2}}</td>
+        </tr>
+        <tr>
+            <td>slice con parametro negativo</td>
+            <td>{{arregloNumerico}} | slice:2-1</td>
+            <td>{{arregloNumerico | slice:2:-1}}</td>
+        </tr>
+        <tr>
+            <td>Show/Hide Contraseña</td>
+            <td>{{contrasenaBienDificil | cambiarContrasena:show}}</td>
+            <td>
+                <p>{{contrasenaBienDificil | cambiarContrasena:show}}</p>
+                <div class="form-check">
+                    <label class="form-check-label">
+                     <input type="checkbox" (change)="MostrarContrasena()" class="form-check-input">
+                     Mostrar/ocultar
+                   </label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Comprobar imagen</td>
+            <td>{{arregloNumerico}} | slice:2-1</td>
+            <td><img width="200px" [src]="urlImage | checkExistImage" alt=""></td>
+        </tr>
+        <tr>
+            <td>Multiplicacion</td>
+            <td>{{numero}} | numero*3</td>
+            <td>{{numero | multiplicacion}}</td>
+        </tr>
+    </tbody>
+</table>

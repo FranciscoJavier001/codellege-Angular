@@ -1,0 +1,44 @@
+.cuadroGris {
+    background: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.titulo {
+    font-size: 30px;
+}
+
+.cuadroGris * {
+    padding: 0;
+}
+
+.cuadroGris>div {
+    height: 60%;
+    width: 20%;
+    color: #ababab;
+}
+
+.cuadroGris div:nth-child(2),
+.cuadroGris div:nth-child(3),
+.cuadroGris div:nth-child(4) {
+    border-left: 1px solid #ababab;
+}
+
+.cuadroGris li {
+    list-style-type: none;
+}
+
+.cuadroGris>div>ul {
+    padding-left: 15px;
+}
+
+.cuadroGris>div>ul>li>p {
+    font-size: 18px;
+}
+
+.cuadroGris>div>ul>li {
+    font-size: 15px;
+}

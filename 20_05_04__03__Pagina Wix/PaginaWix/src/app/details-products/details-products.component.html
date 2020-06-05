@@ -1,0 +1,46 @@
+<div class="contenedor">
+    <div class="fila1">
+        <p>Home / Men / I'm a Product</p>
+
+        <p>
+            < Prev | Next>
+        </p>
+    </div>
+
+    <div class="fila2">
+        <div class="col-6 text-center">
+            <img [src]="product.img" alt="" />
+        </div>
+
+        <div class="col-6 m-1">
+            <h3>{{ product.model }}</h3>
+            <p>SKU 00{{ product.id }}</p>
+
+            <p>${{ product.price }}</p>
+
+            <p>Valoracion: {{ product.rating }}</p>
+
+            <label>Cantidad </label>
+            <input type="number" class="inputCantidad mb-3" value="1" />
+
+            <label class="mb-0">Meses sin intereses</label>
+            <select class="mt-2 " *ngIf="product.msi">
+          <option *ngFor="let meses of product.meses" [value]="meses">{{meses}}</option>
+      </select>
+
+            <button type="button" class="btn btn-outline-success mt-4">
+        add to cart
+      </button>
+
+            <a class="mb-2 mt-4 list-group-item" (click)="mostrar = !mostrar">Informacion del producto
+        <span *ngIf="!mostrar"><i class="fi-interface-plus"></i></span>
+        <span *ngIf="mostrar"><i class="fi-interface-minus"></i></span>
+      </a>
+            <ul class="list-group fadeIn" *ngIf="mostrar">
+                <li *ngFor="let feature of product.description" class="list-group-item">
+                    {{ feature }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

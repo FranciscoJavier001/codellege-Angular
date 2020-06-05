@@ -1,0 +1,85 @@
+#section2 {
+    height: 45vh;
+    margin: 5px;
+    background: darkslategray;
+    position: relative;
+}
+
+#logoSection2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 3.5;
+}
+
+#logoSection2>span {
+    color: limegreen;
+    font-size: 32px;
+}
+
+#logoSection2Invita {
+    color: white;
+    text-align: center;
+    line-height: 0 !important;
+    margin-top: -1%;
+    font-size: 25px;
+}
+
+#circuloSection2 {
+    height: 180px;
+    width: 180px;
+    border: 8px solid limegreen;
+    border-radius: 999px;
+    background: transparent;
+    position: absolute;
+    left: 23%;
+    top: 31%;
+}
+
+.textoLogo2 {
+    position: absolute;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    left: 26%;
+    top: 43%;
+    text-align: center;
+}
+
+.textologo22 {
+    font-size: 20px;
+    position: absolute;
+    top: 52%;
+    color: white;
+    left: 29%;
+}
+
+.texto1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    left: 8%;
+    top: 73%;
+}
+
+.texto2 {
+    position: absolute;
+    color: limegreen;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    top: 92%;
+    left: 33%;
+}
+
+.texto3 {
+    position: absolute;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 12px;
+    top: 96%;
+    left: 23%;
+}

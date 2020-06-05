@@ -1,0 +1,12 @@
+.imagen {
+    width: 50%;
+    height: 70vh;
+}
+
+.carrouselCenter img {
+    margin: auto;
+}
+
+.flechas {
+    filter: invert(100);
+}

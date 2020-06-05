@@ -1,0 +1,19 @@
+<h3 class="text-center">NEW ARRIVALS</h3>
+
+<div class="arrival">
+    <div class="cardArrival" *ngFor="let arrival of ArrivalProducts">
+        <img [src]="arrival.img" alt="" />
+
+        <div class="detalles">
+            <div>
+                <span>{{arrival.model}}</span>
+                <span>${{arrival.price}}</span>
+            </div>
+
+            <div (click)="GetIdToChangeScreen(arrival.id)">
+                <span>View Details</span>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+.contenedor {
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .fila1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 10px 10px;
+}
+
+.contenedor .fila2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor .fila2 img {
+    height: 70vh;
+    width: 90%;
+}
+
+.inputCantidad {
+    width: 13%;
+    height: 40px;
+    display: flex;
+    text-align: center;
+}
+
+.contenedor .fila2 div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .fila2 div:nth-child(2) button {
+    margin-top: 10px;
+}
+
+.list-group .item-list {
+    margin: 5px 20px;
+}
+
+.fadeIn {
+    animation: Animate .5s linear forwards;
+}
+
+select {
+    height: 30px;
+}
+
+.EnlaceInformacion {
+    display: block;
+    width: 48%;
+    cursor: pointer;
+}
+
+@keyframes Animate {
+    to {
+        opacity: 100%;
+    }
+    from {
+        opacity: 0%;
+    }
+}

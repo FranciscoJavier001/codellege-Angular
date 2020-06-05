@@ -1,0 +1,22 @@
+.getList {
+    height: 50vh;
+}
+
+h4 {
+    font-size: 40px;
+    word-spacing: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+input[type='text'] {
+    width: 30%;
+    height: 5vh;
+    padding: 1px 15px;
+}
+
+button {
+    width: 30%;
+}

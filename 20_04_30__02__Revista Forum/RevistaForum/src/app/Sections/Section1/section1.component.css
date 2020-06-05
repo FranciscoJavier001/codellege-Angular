@@ -1,0 +1,56 @@
+#section1 {
+    margin-left: -3%;
+    height: 45vh;
+    background: magenta;
+    position: relative;
+    margin-top: 5px;
+}
+
+#escucha,
+#on {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    line-height: 3.5;
+}
+
+#on {
+    line-height: 0 !important;
+}
+
+.circulo {
+    height: 250px;
+    width: 250px;
+    border: 8px solid white;
+    border-radius: 999px;
+    background: palevioletred;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.circuloTexto1,
+#radio {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    left: 26%;
+    top: 48%;
+}
+
+#radio {
+    top: 61% !important;
+    font-size: 35px;
+    left: 52%;
+}
+
+.circuloTexto2 {
+    font-style: italic;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    left: 25%;
+    top: 89%;
+}
